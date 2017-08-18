@@ -41,7 +41,7 @@ func LatLon2XY(lat, lon float64, z int) (int, int) {
 }
 
 func random(min, max float64) float64 {
-	rand.Seed(time.Now().UTC().UnixNano())
+	
 	diff := max - min
 	return rand.Float64()*diff + min
 }
@@ -56,6 +56,7 @@ func main() {
 	maxlon := flag.Float64("maxlon", 2.98, "Max longitude")
 	num := flag.Int("num", 1, "Number of results")
 	flag.Parse()
+	rand.Seed(time.Now().UTC().UnixNano())
 
 	for i := 0; i < *num; i++ {
 		randlat := random(*minlat, *maxlat)
