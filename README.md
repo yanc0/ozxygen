@@ -1,7 +1,7 @@
 # ozxygen
 Generate random OSM URL for load testing purpose
 
-## Get Ozxygen
+## Get Ozxygen
 
 * Install a valid Go environnement
 * `go get github.com/yanc0/ozxygen`
@@ -26,7 +26,7 @@ Generate random OSM URL for load testing purpose
       -z int
         	Zoom level (default 18)
 
-## Example
+## Example
 
     ozxygen -baseurl http://tileserver.com/ -num 5 -z 10
     
